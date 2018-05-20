@@ -8,14 +8,10 @@ import { ItemService } from './../item.service';
   styleUrls: ['./item-details.component.css'],
   providers: [ItemService]
 })
-
 export class ItemDetailsComponent implements OnInit {
   item: any;
 
-  constructor(
-    private route: ActivatedRoute,
-    private itemService: ItemService
-  ) { }
+  constructor(private route: ActivatedRoute, private router: Router, private itemService: ItemService) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -28,5 +24,14 @@ export class ItemDetailsComponent implements OnInit {
       .subscribe((item) => {
         this.item = item;
       });
+  }
+
+    deleteItem() {
+      if (window.confirm('Are you sure?')) {
+        this.itemService.remove(this.item._id)
+          .subscribe(() => {
+            this.router.navigate(['']);
+          });
+      }
   }
 }
