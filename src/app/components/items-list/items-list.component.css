@@ -22,7 +22,11 @@ ul {
     background-color: #bcbcbc;
 }
 
-  h1 {
+a {
+    font-size: 2rem;
+}
+
+h1 {
     color: white;
     font-size: 5em;
     text-shadow:
@@ -30,4 +34,23 @@ ul {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000; 
+}
+
+@media screen and (max-width: 600px) { 
+    h1 {
+      font-size: 2em;
+    }
+
+    .item-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    input {
+        margin-bottom: 5px;
+    }
+
+    .item-name {
+        font-size: 1.5rem;
+    }
 }

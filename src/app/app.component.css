@@ -4,3 +4,10 @@
     background-color: #F5DF57;
     padding-top: 5%;
   }
+
+  @media screen and (max-width: 600px) { 
+    .container {
+      height: 90vh;
+      width: 100vw;
+    }
+}

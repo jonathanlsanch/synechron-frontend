@@ -29,7 +29,7 @@ ngOnInit() {
     this.getItemDetails(params['id']);
   });
 }
-// getting one story and its details
+// getting one item and its details
    getItemDetails(id) {
      this.itemService.get(id)
        .subscribe((item) => {
@@ -58,7 +58,7 @@ sendUpdatesToApi(id) {
        seller: this.item.seller,
        warranty: this.item.warranty
   };
-  console.log("edits:", this.updatedItem);
+  console.log('edits:', this.updatedItem);
   this.itemService.editItem(id, this.updatedItem)
     .toPromise()
     .then(() => {
