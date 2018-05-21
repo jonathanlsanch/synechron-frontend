@@ -34,18 +34,5 @@ export class ItemDetailsComponent implements OnInit {
           });
       }
   }
-
-  // editItemPls() {
-  //   if (window.confirm('Edit Item?')) {
-  //     this.itemService.updateItem(this.item._id, this.updates)
-  //       .subscribe(() => {
-  //         this.router.navigate(['']);
-  //       });
-  //   }
-      // this.itemService.get(id)
-      //   .subscribe((item) => {
-      //    this.router.navigate(['edit', item._id]);
-      //   });
-      // }
-  }
+}
 

@@ -11,6 +11,5 @@ export const routes: Routes = [
     { path: 'products', component: ItemsListComponent },
     { path: 'products/item/:id', component: ItemDetailsComponent },
     { path: 'add-item', component: NewItemComponent },
-    // { path: '**', redirectTo: '' },
     { path: 'edit/:id', component: EditItemComponent }
 ];
