@@ -1,3 +1,7 @@
+.details-container {
+    font-family: 'Titillium Web', sans-serif;
+}
+
 .item-info {
     background: white;
     border-radius: 10px;
@@ -9,3 +13,4 @@
 .btn {
     margin-bottom: 1%;
 }
+

@@ -2,7 +2,6 @@
     width: 70%;
     margin: 0 auto;
     background-image: url(../../../assets/images/office.jpg);
-    /* opacity: 0.7; */
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Titillium Web', sans-serif;
@@ -20,4 +19,10 @@
 
 .btn {
     padding: 2%;
+}
+
+@media screen and (max-width: 600px) { 
+    .display-4{
+        font-size: 3em;
+    }
 }
