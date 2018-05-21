@@ -13,6 +13,8 @@ import { routes } from './app.routing';
 import { ItemsListComponent } from './components/items-list/items-list.component';
 import { ItemDetailsComponent } from './components/item-details/item-details.component';
 import { NewItemComponent } from './components/new-item/new-item.component';
+import { EditItemComponent } from './components/edit-item/edit-item.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { NewItemComponent } from './components/new-item/new-item.component';
     AppComponent,
     ItemsListComponent,
     ItemDetailsComponent,
-    NewItemComponent
+    NewItemComponent,
+    EditItemComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

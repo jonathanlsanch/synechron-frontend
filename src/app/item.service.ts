@@ -23,8 +23,8 @@ export class ItemService {
       .map((res) => res.json());
   }
 
-  edit(item) {
-    return this.http.put(`${this.BASE_URL}/api/items/${item.id}`, item)
+  editItem(id, updates) {
+    return this.http.put(`${this.BASE_URL}/api/items/${id}`, updates)
       .map((res) => res.json());
   }
 

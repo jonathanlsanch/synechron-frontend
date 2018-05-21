@@ -11,12 +11,12 @@ import { Observable } from 'rxjs/Observable';
 export class NewItemComponent implements OnInit {
 
   itemData = {
-    name: "",
-    description: "",
-    price: "",
-    rating: "",
-    seller: "",
-    warranty: ""
+    name: '',
+    description: '',
+    price: '',
+    rating: '',
+    seller: '',
+    warranty: ''
   };
 
   constructor(private route: ActivatedRoute, private router: Router, private itemService: ItemService) { }
@@ -30,10 +30,7 @@ export class NewItemComponent implements OnInit {
     this.itemService.newItem(myForm.value)
     .subscribe(res => {
       console.log('item successfully created!');
-      // this.entryForm.content = myForm.value.content;
-      // this.entryForm.title = myForm.value.title;
+      this.router.navigate(['/']);
     });
   }
-
-
 }

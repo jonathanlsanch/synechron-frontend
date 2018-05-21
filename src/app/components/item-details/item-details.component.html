@@ -1,8 +1,7 @@
 <h1> item details </h1>
-<a [routerLink]="['']"> Back to list </a>
+<a [routerLink]="['/products']"> Back to list </a>
 
 <div *ngIf="item">
-
 
   <div class="item-info">
     <h2> {{ item.name }}&nbsp;</h2>
@@ -14,4 +13,46 @@
   </div>
 
   <button (click)="deleteItem()"> Delete </button>
+  <a [routerLink]="['/edit', item._id]">Edit Letter</a>
+  <!-- <button (click)="editItemPls()">edit</button> -->
+<!-- <a [routerLink]="['edit', item._id]" role="button" class="btn btn-info"> Edit </a> -->
+<!-- <a [routerLink]="['edit', item._id]">Edit Item</a> -->
+
 </div>
+
+<!-- <form action="" (ngSubmit)="editItemPls(editForm)" #myForm="ngForm">
+
+    <label for="item-name-input"> name </label>
+    <input id="item-name-input" type="text" [(ngModel)]="itemData.name" name="name">
+    <br>
+
+    <label for="item-description-input"> description </label>
+    <input id="item-description-input" type="text" [(ngModel)]="itemData.description" name="description">
+    <br>
+
+    <label for="item-price-input"> price </label>
+    <input id="item-price-input" type="text" [(ngModel)]="itemData.price" name="price">
+    <br>
+
+    <label for="item-rating-input"> rating </label>
+    <input id="item-rating-input" type="text" [(ngModel)]="itemData.rating" name="rating">
+    <br>
+
+    <label for="item-seller-input"> seller </label>
+    <input id="item-seller-input" type="text" [(ngModel)]="itemData.seller" name="seller">
+    <br>
+
+    <label for="item-warranty-input"> warranty </label>
+    <input id="item-warranty-input" type="text" [(ngModel)]="itemData.warranty" name="warranty">
+    <br>
+
+
+    <input type="submit">
+
+  </form> -->
+
+<!-- <a [routerLink]="['edit', item._id]">Edit Item</a> -->
+
+<!-- <div *ngFor='let item of items'>
+    <a [routerLink]="['item', item._id]"> edit </a>
+  </div> -->

@@ -1,0 +1,79 @@
+<!-- 
+
+    <div class="new-container">
+        <h3>edit item</h3>
+          
+          <p *ngIf="savingErr" class="error">
+            {{ savingErr }}
+          </p>
+          <form (ngSubmit)="doTheUpdate(item._id, myForm)" #myForm="ngForm">
+      
+          <label for="item-name-input"> name </label>
+          <input id="item-name-input" type="text" [(ngModel)]="itemData.name" name="name">
+          <br>
+      
+          <label for="item-description-input"> description </label>
+          <input id="item-description-input" type="text" [(ngModel)]="itemData.description" name="description">
+          <br>
+      
+          <label for="item-price-input"> price </label>
+          <input id="item-price-input" type="text" [(ngModel)]="itemData.price" name="price">
+          <br>
+      
+          <label for="item-rating-input"> rating </label>
+          <input id="item-rating-input" type="text" [(ngModel)]="itemData.rating" name="rating">
+          <br>
+      
+          <label for="item-seller-input"> seller </label>
+          <input id="item-seller-input" type="text" [(ngModel)]="itemData.seller" name="seller">
+          <br>
+      
+          <label for="item-warranty-input"> warranty </label>
+          <input id="item-warranty-input" type="text" [(ngModel)]="itemData.warranty" name="warranty">
+          <br>
+      
+      
+          <input type="submit">
+      
+        </form>
+        <br>
+       <span>nvm, <a [routerLink]="['/products']">back to items</a></span> 
+      </div> -->
+
+      <div class="new-container">
+          <h3>edit item</h3>
+        
+            <form (ngSubmit)="doTheUpdate(item._id, myForm)" #myForm="ngForm">
+        
+            <label for="item-name-input"> {{ item.name }} </label>
+            <input id="item-name-input" type="text" [(ngModel)]="item.name" name="name" value="{{ item.name }}">
+            <br>
+        
+            <label for="item-description-input"> description </label>
+            <input id="item-description-input" type="text" [(ngModel)]="item.description" name="description" value="{{ item.description }}">
+            <br>
+        
+            <label for="item-price-input"> price </label>
+            <input id="item-price-input" type="text" [(ngModel)]="item.price" name="price">
+            <br>
+        
+            <label for="item-rating-input"> rating </label>
+            <input id="item-rating-input" type="text" [(ngModel)]="item.rating" name="rating">
+            <br>
+        
+            <label for="item-seller-input"> seller </label>
+            <input id="item-seller-input" type="text" [(ngModel)]="item.seller" name="seller">
+            <br>
+        
+            <label for="item-warranty-input"> warranty </label>
+            <input id="item-warranty-input" type="text" [(ngModel)]="item.warranty" name="warranty">
+            <br>
+        
+        
+            <input type="submit">
+            <!-- <button class="btn btn-default"> Save item </button> -->
+        
+          </form>
+          <br>
+         <span>nvm, <a [routerLink]="['/products']">back to items</a></span> 
+        </div>
