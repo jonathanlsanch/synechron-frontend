@@ -11,8 +11,10 @@
     
     <ul>
       <li *ngFor="let item of items | filter:'name':pattern; let i = index">
+          <div class="col-sm-3">
           <a class="item-name" [routerLink]="['item', item._id]"> {{ item.name }} </a>
           <p> {{ item.description }} </p>
+          </div>
       </li>
     </ul>
   
