@@ -30,7 +30,7 @@ export class NewItemComponent implements OnInit {
     this.itemService.newItem(myForm.value)
     .subscribe(res => {
       console.log('item successfully created!');
-      this.router.navigate(['/']);
+      this.router.navigate(['/products']);
     });
   }
 }

@@ -30,7 +30,7 @@ export class ItemDetailsComponent implements OnInit {
       if (window.confirm('Are you sure?')) {
         this.itemService.remove(this.item._id)
           .subscribe(() => {
-            this.router.navigate(['']);
+            this.router.navigate(['/products']);
           });
       }
   }

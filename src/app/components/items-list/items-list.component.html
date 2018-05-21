@@ -1,21 +1,18 @@
-<h1> item list </h1>
-<div>
-  <div *ngFor="let item of items">
-    <h3> {{ item.name }}&nbsp;</h3>
-    <p> {{ item.description }} </p>
-    <a [routerLink]="['item', item._id]" role="button" class="btn btn-info"> View Details </a>
-  </div>
+<h1> Synechron Merch Store </h1>
+
+<a [routerLink]="['/add-item']" role="button" class="btn btn-info"> Add New Product </a>
+<br><br>
   <div>
-      <label for="things_name"> Search thing: </label>
-      <input id="things_name" placeholder="thing name"
+      <label for="items_name"> Search Products: </label>
+      <br>
+      <input id="items_name" placeholder="Product Name"
               type="text" [(ngModel)]="pattern">
     <div>
     
-    <h4> Stuff list </h4>
     <ul>
       <li *ngFor="let item of items | filter:'name':pattern; let i = index">
-        {{ i+1 }}) {{ item.name }}
-        <a [routerLink]="['item', item._id]" role="button" class="btn btn-info"> View Details </a>
+          <a class="item-name" [routerLink]="['item', item._id]"> {{ item.name }} </a>
+          <p> {{ item.description }} </p>
       </li>
     </ul>
   
