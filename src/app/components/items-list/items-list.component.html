@@ -1,24 +1,29 @@
-<h1> Synechron Merch Store </h1>
+<div class="show-items-container">
+  <h1> Synechron Merch Store </h1>
+  
+  <a [routerLink]="['/add-item']" role="button" class="btn btn-info"> Add New Product </a>
+  
+  <br><br>
+  
+  <label for="items_name"> Search Products: </label>
 
-<a [routerLink]="['/add-item']" role="button" class="btn btn-info"> Add New Product </a>
-<br><br>
+  <br>
+      
+  <input id="items_name" placeholder="Product Name"
+    type="text" [(ngModel)]="pattern">
+  
   <div>
-      <label for="items_name"> Search Products: </label>
-      <br>
-      <input id="items_name" placeholder="Product Name"
-              type="text" [(ngModel)]="pattern">
-    <div>
-    
     <ul>
       <li *ngFor="let item of items | filter:'name':pattern; let i = index">
           <div class="col-sm-3">
             <div class="item-container">
               <a class="item-name" [routerLink]="['item', item._id]"> {{ item.name }} </a>
-              <p> {{ item.description }} </p>
+              <p> $ {{ item.price }} </p>
             </div>
           </div>
       </li>
     </ul>
   
+</div>
 </div>
 
