@@ -1,5 +1,5 @@
  <div class="new-container">
-          <h3>edit item</h3>
+          <h3>Edit Product</h3>
         
             <form (ngSubmit)="doTheUpdate(item._id, myForm)" #myForm="ngForm">
         
@@ -28,8 +28,8 @@
             <br>
         
         
-            <input type="submit">
+            <input type="submit" role="button" class="btn btn-success">
           </form>
           <br>
-         <span><a [routerLink]="['/products']">back to items</a></span> 
+         <span><a [routerLink]="['/products']">Back to Products</a></span> 
         </div>

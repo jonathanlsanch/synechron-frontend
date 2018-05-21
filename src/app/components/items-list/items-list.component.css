@@ -5,3 +5,8 @@ ul {
 .item-name {
     font-size: 2rem;
 }
+
+.item-container {
+    background: white;
+    border-radius: 10px;
+  }

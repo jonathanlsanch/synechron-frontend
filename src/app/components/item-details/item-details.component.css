@@ -1,0 +1,11 @@
+.item-info {
+    background: white;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.btn {
+    margin-bottom: 1%;
+}

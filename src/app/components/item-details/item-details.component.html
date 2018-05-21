@@ -1,17 +1,20 @@
-<h1> item details </h1>
-<a [routerLink]="['/products']"> Back to list </a>
+<h1> Product Details </h1>
+<a [routerLink]="['/products']"role="button" class="btn btn-info"> Back to Products List </a>
 
 <div *ngIf="item">
 
   <div class="item-info">
     <h2> {{ item.name }}&nbsp;</h2>
-    <h3> {{ item.description }} </h3>
-    <h3> {{ item.price }} </h3>
-    <h3> {{ item.rating }} </h3>
-    <h3> {{ item.seller }} </h3>
-    <h3> {{ item.warranty }} </h3>
+    <h3> Description: {{ item.description }} </h3>
+    <h4> Price: $ {{ item.price }} </h4>
+    <h5> Rating: {{ item.rating }} </h5>
+    <h5> Seller: {{ item.seller }} </h5>
+    <h6> Warranty: {{ item.warranty }} </h6>
+
+    <a [routerLink]="['/edit', item._id]" role="button" class="btn btn-warning">EDIT</a>
+    <br>
+    <button (click)="deleteItem()" class="btn btn-danger"> DELETE</button>
+
   </div>
 
-  <button (click)="deleteItem()"> Delete </button>
-  <a [routerLink]="['/edit', item._id]">Edit Letter</a>
 </div>
