@@ -15,6 +15,7 @@ import { ItemDetailsComponent } from './components/item-details/item-details.com
 import { NewItemComponent } from './components/new-item/new-item.component';
 import { EditItemComponent } from './components/edit-item/edit-item.component';
 import { HomeComponent } from './components/home/home.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HomeComponent } from './components/home/home.component';
     ItemDetailsComponent,
     NewItemComponent,
     EditItemComponent,
-    HomeComponent
+    HomeComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
