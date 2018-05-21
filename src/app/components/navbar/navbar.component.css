@@ -1,0 +1,32 @@
+/* li {
+    list-style-type: none;
+    display: inline-block;
+} */
+
+.navbar {
+    margin-bottom: 0px !important;
+    height: 10rem;
+    margin-top: 1rem;
+}
+
+ul {
+    margin-top: 1%;
+    font-size: 1.6rem;
+}
+
+.nav-link:hover {
+    background-color: #F5DF57;
+}
+
+/* img {
+    margin: 0 auto;
+}
+
+
+a {
+    font-size: 1.8rem;
+}
+
+li {
+    padding-right: 2rem;
+} */

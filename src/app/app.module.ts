@@ -16,6 +16,7 @@ import { NewItemComponent } from './components/new-item/new-item.component';
 import { EditItemComponent } from './components/edit-item/edit-item.component';
 import { HomeComponent } from './components/home/home.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     NewItemComponent,
     EditItemComponent,
     HomeComponent,
-    FilterPipe
+    FilterPipe,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
